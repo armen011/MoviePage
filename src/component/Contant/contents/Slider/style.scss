@@ -1,0 +1,96 @@
+.slider {
+  width: 100%;
+  height: 375px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  .cover{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, rgba( 3,37,65, 0.75) 0%, rgba(3,37,65, 0.75) 100%);
+  }
+  .title {
+    width: 96%;
+    height: 35px;
+    display: flex;
+    h2 {
+      color: white;
+      margin-right: 20px;
+    }
+    .toSwitch {
+      width: 200px;
+      height: 100%;
+      border-radius: 23px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #37dbaf;
+      button {
+        width: 85px;
+        height: 100%;
+        border-radius: 23px;
+        background-color: transparent;
+        border:0;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+      
+    }
+  }
+  .sliderComp {
+    width: 96%;
+    min-height: 275px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+    div {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      color: white;
+      position: relative;
+      margin-right: 40px;
+      .playBtn{
+        position: absolute;
+        top:60px;
+        width: 80px;
+        height: 80px;
+        filter: invert(1);
+        color: yellow;
+        background: url('https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-175-play-806cb05551791b8dedd7f8d38fd3bd806e2d397fcfeaa00a5cc9129f0819fd07.svg');
+        transition: 0.5s;
+      }
+      img{
+        transition: 0.5s;
+
+      }
+      h2 {
+        font-size: 19px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    div:hover img {
+      transform: scale(1.2, 1.2);
+      transition:0.5s;
+    }
+    div:hover .playBtn {
+      transform: scale(1.5, 1.5);
+      transition:0.5s;
+    }
+  }
+}

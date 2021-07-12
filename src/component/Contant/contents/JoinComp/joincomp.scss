@@ -1,0 +1,83 @@
+.joincom {
+  width: 90%;
+  min-height: 300px;
+  background: url("https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces_filter(duotone,190235,ad47dd)/lMnoYqPIAVL0YaLP5YjRy7iwaYv.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 30px 40px;
+  h2 {
+    font-size: 32px;
+    color: white;
+  }
+  .info {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    .infoBig {
+      width: 60%;
+      height: 100%;
+      padding: 10px 0;
+      color: white;
+      font-size: 19px;
+      button {
+        width: 93px;
+        height: 41px;
+        background-color: #805be7;
+        border: 0;
+        font-size: 17.5px;
+        color: white;
+        font-weight: 700;
+        margin-top: 20px;
+      }
+    }
+    .infoSmall {
+      width: 40%;
+      height: 100%;
+      color: white;
+      li {
+        list-style-type: circle;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .joincom{
+     width: 100%;
+     .info{
+
+       .infoBig{
+         font-size: 17px;
+       }
+     }
+  }
+}
+@media only screen and (max-width: 935px) {
+  .joincom{
+    h2{
+      text-align: center;
+    }
+     .info{
+       flex-direction: column;
+       align-items: center;
+       font-size: 19px;
+       .infoBig{
+         text-align: center;
+       }
+       .infoSmall {
+        display: none;
+       }
+     }
+  }
+}
+@media only screen and (max-width: 930px) {
+  .joincom{
+      .info{
+          .infoBig{
+          width: 100%;
+          font-size: 22px;
+        }
+      }
+  }
+
+}

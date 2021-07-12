@@ -1,0 +1,384 @@
+.moviePage{
+    width: 100%;
+    min-height:600px;
+    padding-top: 60px;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .about{
+        width: 100%;
+        min-height: 550px;
+        .cover{
+            width: 100%;
+            min-height: 600px       ;
+            background:linear-gradient(to right, rgba(3.14%, 3.14%, 3.14%, 1.00) 150px, rgba(3.14%, 3.14%, 3.14%, 0.84) 100%);
+            padding:30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .img{
+                width: 300px;
+                height: 450px;
+                border-radius: 8px;
+                overflow:hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .content{
+                width: 75%;
+                height: 520px;
+                color: white;
+                h1{
+                    font-size: 35.2px;
+                    font-weight: 700;
+                    font-family: Arial  sans-serif;
+                    span{
+                        opacity: 0.8;
+                        font-weight: 400;
+                    }
+                }
+                .info{
+                    width: 100%;
+                    height: 30px;
+                    display: flex;
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    li{
+                        margin-right: 10px;
+                        a{
+                            color: white;
+                            cursor: pointer;
+
+                        }
+                        a:hover{
+                            color: rgba(82, 82, 82, 0.897);
+
+                        }
+                    }
+                    .withDisk::before{
+                        font-size: 1.1em;
+                        line-height: 1;
+                        content: '\2022';
+                        margin-right: 5px;
+
+                    }
+                }
+                .btns{
+                    width: 100%;
+                    min-height: 67px;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+
+                    li{
+                        margin-right: 13px;
+                        font-size: 16px;
+
+                    }
+                    .scale{
+                        cursor: pointer;
+
+                    }
+                    .scale:hover{
+                        transition: 0.3s;
+                        transform: scale(1.1);
+                    }
+                    .userScore{
+                        font-size: 16px;
+                        font-weight: 700;
+
+                    }
+                   .circul{
+                       width: 45px;
+                       height: 45px;
+                       border-radius: 100%;
+                       background: #032541;
+                       display: flex;
+                       justify-content: center;
+                       align-items: center;
+                       cursor: pointer;
+                   }
+                   .circul:hover{
+                    color: rgb(189, 186, 186);
+
+                        }
+                   .play{
+                       color: white;
+                       font-weight: 700;
+                       i{
+                           font-size: 14px;
+                        }
+                        cursor: pointer;
+
+                   }
+                   .play:hover{
+                       color: rgb(189, 186, 186);
+
+                   }
+                }
+                .tagline{
+                    font-size: 17.5px;
+                    font-weight: 400;
+                    color:#9e9e9e;
+                }
+                .overview{
+                    margin:10px 0;
+                    font-size: 1.3em;
+                }
+                .overviewText{
+                    width: 100%;
+                    min-height:100px ;
+                    margin-bottom: 10px;
+                }
+                .team{
+                    width: 100%;
+                    min-height: 100px;
+                    tr{
+                        margin-bottom: 20px;
+
+                        td{
+                            font-weight: bold;
+                            sub{
+                            font-weight:300;
+    
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .infoDesk{
+        width: 100%;
+        min-height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background: white;
+
+        .info{
+            width:70%;
+            height: 500px;
+            padding-top: 40px;
+            
+            h3{
+                width: 100%;
+                height: 30px;
+                margin-bottom: 10px;
+                
+
+            }
+            .cast{
+                width: 100%;
+                min-height: 330px;
+                display: flex;
+                overflow-x: scroll;
+                overflow-y:hidden ;
+                .actor{
+                    width: 140px;
+                    height: 310px;
+                    margin-right:10px ;
+                    border-radius: 8px;
+                    box-shadow: 2px 4px 8px #0000001a;
+                    img{
+                        border-top-left-radius: 8px;
+                        border-top-right-radius: 8px;
+                        overflow:hidden;
+                    }
+                    .name{
+                        width:100%;
+                        min-height: 60px;
+                        padding-left: 10px;
+                        h5{
+                            font-size: 16px;
+                        }
+                        p{
+                            font-size: 14px;
+                            
+                        }
+                        
+                    }
+
+                }
+                
+            }
+        }
+        .contact{
+            width: 20%;
+            min-height: 80px;
+            padding-top: 40px;
+            padding-left: 10px;
+
+            .icons{
+                width: 100%;
+                height: 30px;
+                display: flex;
+                margin-bottom: 20px;
+                li{
+                    width: 30px;
+                    height: 30px;
+                    font-size: 25px;
+                    margin-right: 20px;
+                }
+                .line{
+                    height: 30px;
+                    width: 2px;
+                    background: rgb(51, 51, 51);
+                    opacity: 0.7;
+
+                }
+
+            }
+            h5{
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+            ul{
+                li{
+                    h6{
+                        font-size: 16px;
+                        font-weight: 700;
+        
+                    }
+                    p{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            
+    
+        }
+    }
+    
+}
+@media only screen and (max-width: 1259px) {
+    .moviePage{
+        .about{
+            .cover{
+                .img{
+                    margin-bottom: 30px;
+                }
+                .content{
+                    width: 100%;
+                    h1{
+                        text-align: center;
+                    }
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .info{
+                        justify-content: center;
+
+                    }
+                    .btns{
+                        justify-content: center;
+                    }
+                    .overviewText{
+                        text-align: center;
+                        margin-bottom: 30px;
+                    }
+                }
+                
+            }
+
+        }
+        
+    }
+  }
+
+@media only screen and (max-width: 1024px) {
+    .moviePage{
+        .about{
+            .cover{
+                .img{
+                    margin-bottom: 30px;
+                }
+                .content{
+                    width: 100%;
+                }
+                
+            }
+
+        }
+
+
+        .infoDesk{
+    
+            .info{
+                width: 100%;
+            }
+            .contact{
+               width: 100%;
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-around;
+               padding: 20px; 
+               .icons{
+                   width: 40%;
+               }
+               h5{
+                   font-size: 23px;
+                   font-weight: 800;
+               }
+               ul{
+                   margin-right: 10px;
+               }
+            }
+        }
+    }
+  }
+  
+    
+  @media only screen and (max-width: 544px) {
+    .moviePage{
+        .about{
+            .cover{
+                
+                .content{
+                   
+                    .info{
+                        flex-wrap: wrap;
+                        margin-bottom: 55px;
+                    }
+                    .btns{
+                        flex-wrap: wrap;
+                        margin-bottom: 55px;
+
+                    }
+                    .team{
+                        display: none;
+                    }
+                }
+                
+            }
+
+        }
+        .infoDesk{
+    
+            .info{
+                width: 100%;
+            }
+            .contact{
+               width: 100%;
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-around;
+               padding: 20px; 
+               .icons{
+                   width: 100%;
+                   justify-content: center;
+               }
+               h5{
+                   display: none;
+               }
+               ul{
+               }
+            }
+        }
+        
+    }
+}
